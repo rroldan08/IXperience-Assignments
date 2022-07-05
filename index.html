@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger's Bio</title>
+
+
+    <link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous">
+    </link>
+
+
+    <!-- I should seriously work on my formatting lol-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<script>
+    // alert message is shown here.
+    function showMessage() {
+        alert("Either way, I think we can get along!");
+    }
+
+    // function finds the "response" id for the second question and returns "of course it does" in its text box.
+    function yeahItDoes() {
+        document.getElementById("response").value = "Of course it does!";
+    }
+
+</script>
+
+<!-- editing the body class to fit the bootstap format rather than using css classes-->
+
+<body class="container-fluid" style="background-color: black">
+
+    <div>
+        <h1 class="display-3 text-center" style="color: white;"> Roger Roldan </h1>
+
+        <div class="text-center">
+            <figure>
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHnIxEQ5HOhjg/profile-displayphoto-shrink_800_800/0/1615684267217?e=1659571200&v=beta&t=RzsbTRTl78bmzdCbzZogCXtsO27TVm4pq29ZnTqABYY"
+                    class="rounded" alt="17-year old me" width="200px">
+                <figcaption class="text-muted" style="background-color: white; padding: 5px "> 17-year old me at USC for
+                    a Journalism program</figcaption>
+            </figure>
+        </div>
+
+
+
+
+        <!-- Remember that anchor tags are used to create hyperlinks on the web page. This one has hyperlinks to my github and linked in profiles-->
+        <h2 class="text-center" style="color: white;">Github: <a href="https://github.com/rroldan08"> rroldan08 </a>
+        </h2>
+        <h3 class="text-center" style="color: white;"> LinkedIn: <a
+                href="https://www.linkedin.com/in/roger-roldan1979/"> roger-roldan1979 </a> </h3>
+    </div>
+
+    <br><br>
+
+
+
+    <!-- Pretty much the rest of the components of the Pre-work website. Update all this to its bootstrap equivalent-->
+
+
+    <!-- Introduction-->
+    <div>
+
+        <!-- Changing from "intro" class to bootstrap-->
+        <!-- Intro class has a black background, white colored, centered text-->
+        <div class="text-center" style="background-color: black; color: white;">
+            Here's a little about me...
+        </div>
+
+        <!-- Changing from "firstwordbunch" class to bootstrap-->
+        <div class="text-center" style="background-color: black; color: white;">
+            I was born and raised in Los Angeles, California. I'm a junior student at
+            CalState LA majoring in Computer Science. I was originally
+            interested in pursing a career in Journalism and was very humanities-oriented, but
+            soon got into a STEM major once I realized I wouldn't be making as much in journalism.
+            Did track and field in high school, and later began learning jiu-jitsu. Still try to keep
+            active these days, and I hope that Portugal can be a good environment for that.
+        </div>
+
+        <br>
+
+
+        <!--My favorite quote from one of my favorite authors-->
+        <div class="container">
+            <p>
+            <blockquote class="text-center blockquote-reverse" style="background-color: black; color: white;">
+                My favorite quote: "You have power over your mind- not outside events. Realize this, and
+                you will find strength."
+                <footer>-Marcus Aurelius, Meditations </footer>
+            </blockquote>
+            </p>
+        </div>
+
+        <!-- Spotify link to my favorite song (at least one of my favorites)-->
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/2cyD0OE6HQwSk2nmDcQx1O?utm_source=generator" width="100%"
+            height="380" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+        <br><br><br>
+
+        <!-- Radio box questions with a submit button asking the user if they liked the song listed in the spotify link-->
+        <div class="text-center" style="color:white;"> Did you like the song?</div>
+
+        <!-- The 'yes' button-->
+        <div class="form-check text-center" style="color:white">
+            <input class="form-check-input-center" type="radio" name="Yes" id="button1">
+            <label class="form-check-input-center" for="button1">Yes</label>
+        </div>
+        <!--The 'no' button-->
+        <div class="form-check text-center" style="color: white;">
+            <input class="form-check-input-center" type="radio" name="No" id="button2">
+            <label class="form-check-input-center" for="button2">No</label>
+        </div>
+
+
+
+        <!-- 'Submit' button shows an alert that states that whatever answer that was chosen, it doesn't mean that we won't get along-->
+        <div class="text-center">
+            <button type="button" class="btn btn-sm btn-default" style="color: white;" id="submit_button"
+                onclick="showMessage()">Submit</button>
+        </div>
+
+        <br>
+
+
+
+
+        <!-- Second question that asks if the song slaps. This time it's a text based response-->
+        <div class="form-text text-center">
+            <label style="color: white;">Does this song slap?</label>
+            <input class="form-text-input" type="text" name="response" id="response" />
+        </div>
+
+        <br>
+        <!-- This 'submit' button shows the text "of course it does" in the text box when clicked, no matter what you wrote in the text box-->
+        <div class="text-center">
+            <button type="button" class="btn btn-sm btn-default" style="color: white;" id="submit_button2"
+                onclick="yeahItDoes()">Submit</button>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
